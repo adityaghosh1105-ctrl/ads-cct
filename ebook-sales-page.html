@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="[EBOOK TITLE] — a practical guide designed to help [WHO IS THIS FOR] achieve [WHAT RESULT DOES IT DELIVER].">
+<title>[EBOOK TITLE] | Get Instant Access</title>
+<style>
+:root{
+  --bg:#f7f5ef;--surface:#fff;--ink:#171717;--muted:#666;
+  --accent:#c86b35;--accent2:#8f3f20;--dark:#181714;--line:#e8e3d9;
+  --soft:#eee9df;--radius:24px;--shadow:0 18px 50px rgba(28,22,14,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;letter-spacing:-.04em;font-size:1.15rem}
+.nav-link{font-size:.9rem;color:#555}
+.hero{padding:54px 0 82px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.eyebrow{display:inline-flex;background:#eee4d8;border:1px solid #dfd0c0;padding:7px 12px;border-radius:99px;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent2);margin-bottom:20px}
+h1{font-size:clamp(2.55rem,6vw,5.3rem);line-height:.98;letter-spacing:-.065em;max-width:760px}
+.hero p.lead{font-size:1.16rem;color:#5e5a54;max-width:650px;margin:25px 0 30px}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:white;padding:17px 27px;border-radius:13px;font-weight:900;font-size:1rem;box-shadow:0 10px 25px rgba(200,107,53,.28);transition:.18s transform,.18s background}
+.cta:hover{transform:translateY(-2px);background:var(--accent2)}
+.cta:active{transform:scale(.98)}
+.trust{font-size:.77rem;color:#777;margin-top:11px}
+.cover-wrap{display:flex;justify-content:center;position:relative}
+.cover{width:min(350px,78vw);aspect-ratio:3/4;position:relative;border-radius:8px 16px 16px 8px;background:linear-gradient(145deg,#25201c,#6d3924 48%,#b96835);box-shadow:30px 35px 55px rgba(30,20,10,.28);padding:35px 29px;color:#fff;overflow:hidden;transform:rotate(3deg)}
+.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.16),transparent 28%,transparent 70%,rgba(0,0,0,.22))}
+.cover small{position:relative;z-index:1;text-transform:uppercase;letter-spacing:.16em;font-weight:800;opacity:.82}
+.cover h2{position:relative;z-index:1;font-size:clamp(2rem,4vw,3rem);line-height:1.02;letter-spacing:-.05em;margin:28px 0}
+.cover .cover-bottom{position:absolute;z-index:1;bottom:28px;left:29px;font-weight:700}
+.badge{position:absolute;right:-3px;bottom:5%;background:#fff;color:var(--ink);padding:14px 17px;border-radius:15px;box-shadow:var(--shadow);font-size:.82rem;font-weight:900;transform:rotate(-5deg)}
+section{padding:92px 0}
+.section-head{max-width:720px;margin-bottom:45px}
+.kicker{font-size:.76rem;text-transform:uppercase;letter-spacing:.15em;font-weight:900;color:var(--accent2);margin-bottom:12px}
+h2{font-size:clamp(2rem,4vw,3.45rem);line-height:1.04;letter-spacing:-.05em}
+.section-head p{color:var(--muted);margin-top:16px;font-size:1.05rem}
+.problem{background:#171614;color:#fff}
+.problem .section-head p{color:#bdb8b0}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}
+.pain-list{display:grid;gap:14px}
+.pain{padding:18px 20px;border:1px solid #34312d;border-radius:15px;color:#ddd}
+.pain b{color:#fff}
+.solution{background:#fff}
+.solution-card{background:linear-gradient(135deg,#fbf6ee,#eee6d8);border:1px solid #e2d8c8;border-radius:var(--radius);padding:48px;display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:center}
+.solution-card p{color:#605b54;margin:18px 0 24px}
+.stat{background:#fff;border-radius:18px;padding:26px;box-shadow:var(--shadow);text-align:center}
+.stat strong{display:block;font-size:2.3rem;letter-spacing:-.06em}
+.stat span{font-size:.84rem;color:#777}
+.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.module{background:#fff;border:1px solid var(--line);padding:28px;border-radius:20px;box-shadow:0 5px 20px rgba(0,0,0,.03)}
+.num{width:38px;height:38px;border-radius:11px;background:#eee4d8;color:var(--accent2);display:grid;place-items:center;font-weight:900;margin-bottom:20px}
+.module h3{font-size:1.15rem;margin-bottom:9px}
+.module p{color:#6a665f;font-size:.92rem}
+.benefits{background:#eee9df}
+.benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.benefit{background:#fff;border-radius:20px;padding:25px}
+.icon{font-size:1.65rem;margin-bottom:18px}
+.benefit h3{font-size:1.05rem}
+.benefit p{color:#6b675f;font-size:.9rem;margin-top:8px}
+.author{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:center}
+.author-photo{min-height:300px;border-radius:28px;background:linear-gradient(145deg,#29251f,#a35b35);display:grid;place-items:center;color:#fff;font-size:4rem;font-weight:900}
+.author-copy p{color:#666;margin:18px 0}
+.proof{background:#fff}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quote{border:1px solid var(--line);border-radius:20px;padding:28px}
+.quote p{font-size:1rem;line-height:1.7}
+.quote small{display:block;color:#777;margin-top:20px;font-weight:700}
+.bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bonus{border:2px dashed #d8c4ad;background:#fffaf4;padding:28px;border-radius:20px}
+.price-box{background:var(--dark);color:#fff;border-radius:30px;padding:55px;display:grid;grid-template-columns:1fr .75fr;gap:45px;align-items:center}
+.price-box p{color:#bdb9b1}
+.value-list{display:grid;gap:11px;margin:25px 0}
+.value-list div{display:flex;justify-content:space-between;border-bottom:1px solid #37342f;padding-bottom:10px;color:#ddd}
+.price{font-size:4.2rem;font-weight:950;letter-spacing:-.07em;line-height:1}
+.price small{font-size:1rem;color:#aaa;letter-spacing:0}
+.price-panel{background:#fff;color:var(--ink);padding:32px;border-radius:22px}
+.price-panel .cta{width:100%;margin-top:20px}
+.guarantee{background:#eee9df}
+.guarantee-box{max-width:850px;margin:auto;text-align:center;background:#fff;padding:50px;border-radius:28px;box-shadow:var(--shadow)}
+.guarantee-mark{font-size:2.6rem}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px 20px}
+summary{font-weight:850;cursor:pointer}
+details p{color:#68645d;margin-top:12px;font-size:.93rem}
+.final{padding:105px 0;text-align:center;background:linear-gradient(135deg,#211c18,#5c3020);color:#fff}
+.final p{color:#d5cec5;max-width:650px;margin:18px auto 28px}
+.final .cta{background:#fff;color:#201c18}
+.final .cta:hover{background:#eee4d8}
+.footer{padding:30px 0 100px;color:#777;font-size:.8rem;text-align:center}
+.mobile-cta{display:none}
+@media(max-width:850px){
+  .hero-grid,.problem-grid,.solution-card,.author,.price-box{grid-template-columns:1fr}
+  .hero{padding-top:30px}.hero-grid{gap:45px}.cover-wrap{order:-1}
+  .modules{grid-template-columns:1fr 1fr}.benefit-grid{grid-template-columns:1fr 1fr}
+  .testimonials,.bonus-grid{grid-template-columns:1fr}
+  .author-photo{min-height:220px}.price-box{padding:35px}
+  .mobile-cta{display:flex;position:fixed;z-index:20;bottom:14px;left:4%;right:4%;padding:13px 18px;background:var(--accent);color:#fff;border-radius:14px;align-items:center;justify-content:center;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+}
+@media(max-width:560px){
+  section{padding:68px 0}.nav-link{display:none}
+  h1{font-size:2.75rem}.hero p.lead{font-size:1rem}
+  .modules,.benefit-grid,.faq{grid-template-columns:1fr}
+  .solution-card{padding:28px}.price-box{padding:28px}
+  .price{font-size:3.5rem}.guarantee-box{padding:32px 22px}
+  .cover{width:78vw}
+}
+</style>
+</head>
+<body>
+
+<a class="mobile-cta" href="[PASTE YOUR PAYMENT GATEWAY LINK/BUTTON CODE HERE]">Get This eBook →</a>
+
+<header class="container">
+  <nav>
+    <div class="brand">[EBOOK BRAND]</div>
+    <a class="nav-link" href="#inside">What's Inside</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+  <div>
+    <span class="eyebrow">Instant Digital Access • [FORMAT/LENGTH]</span>
+    <h1>Go From [CURRENT PAIN] to [DESIRED RESULT] — Without [COMMON FRUSTRATION].</h1>
+    <p class="lead">[EBOOK TITLE] is the practical, step-by-step guide for [WHO IS THIS FOR] who want to [CORE PROMISE/TRANSFORMATION] with a clear plan they can actually follow.</p>
+    <a class="cta" href="[PASTE YOUR PAYMENT GATEWAY LINK/BUTTON CODE HERE]">Get This eBook <span>→</span></a>
+    <div class="trust">Secure checkout • Instant download • Read on phone, tablet or computer</div>
+  </div>
+  <div class="cover-wrap">
+    <div class="cover">
+      <small>[TOPIC / NICHE]</small>
+      <h2>[EBOOK TITLE]</h2>
+      <div class="cover-bottom">By [AUTHOR NAME]</div>
+    </div>
+    <div class="badge">[80+ Pages / PDF]</div>
+  </div>
+</div>
+</section>
+
+<section class="problem">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">The problem</div>
+    <h2>You don't need more random information. You need a clear path.</h2>
+    <p>If you're [DESCRIBE AUDIENCE'S CURRENT SITUATION], it's easy to feel stuck, overwhelmed or unsure what to do next.</p>
+  </div>
+  <div class="problem-grid">
+    <div class="pain-list">
+      <div class="pain">✕ <b>[Pain point #1]</b> — [Why it keeps the reader stuck]</div>
+      <div class="pain">✕ <b>[Pain point #2]</b> — [Why it feels frustrating]</div>
+      <div class="pain">✕ <b>[Pain point #3]</b> — [What happens if nothing changes]</div>
+      <div class="pain">✕ <b>[Pain point #4]</b> — [The hidden cost of trial and error]</div>
+    </div>
+    <div>
+      <p style="font-size:1.25rem;color:#ddd">The answer isn't another giant pile of tips. It's a simple framework that shows you <b>what to do, why it matters, and what to do next.</b></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="solution">
+<div class="container">
+  <div class="solution-card">
+    <div>
+      <div class="kicker">Meet the solution</div>
+      <h2>A practical playbook for [CORE PROMISE].</h2>
+      <p>[EBOOK TITLE] turns [TOPIC] into a clear, actionable system. Instead of guessing, you'll have a structured process you can use immediately.</p>
+      <a class="cta" href="[PASTE YOUR PAYMENT GATEWAY LINK/BUTTON CODE HERE]">Get This eBook →</a>
+      <div class="trust">Secure checkout • Instant download</div>
+    </div>
+    <div>
+      <div class="stat"><strong>[FORMAT]</strong><span>Focused, practical content — no filler.</span></div>
+      <div style="height:15px"></div>
+      <div class="stat"><strong>[3–5]</strong><span>Core modules designed around outcomes.</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="inside">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">What's inside</div>
+    <h2>Everything you need to move forward with confidence.</h2>
+    <p>Each chapter is built around a practical result — so you're not just reading; you're building a usable system.</p>
+  </div>
+  <div class="modules">
+    <article class="module"><div class="num">01</div><h3>[CHAPTER / MODULE 1]</h3><p>[Benefit-driven description: what the reader will understand or accomplish.]</p></article>
+    <article class="module"><div class="num">02</div><h3>[CHAPTER / MODULE 2]</h3><p>[Benefit-driven description: what changes after applying it.]</p></article>
+    <article class="module"><div class="num">03</div><h3>[CHAPTER / MODULE 3]</h3><p>[Benefit-driven description: the practical outcome.]</p></article>
+    <article class="module"><div class="num">04</div><h3>[CHAPTER / MODULE 4]</h3><p>[Benefit-driven description: the shortcut, framework or system.]</p></article>
+    <article class="module"><div class="num">05</div><h3>[CHAPTER / MODULE 5]</h3><p>[Benefit-driven description: how to keep the result going.]</p></article>
+    <article class="module"><div class="num">+</div><h3>Quick-Action Resources</h3><p>[Checklists, examples, templates, worksheets or bonus resources included.]</p></article>
+  </div>
+</div>
+</section>
+
+<section class="benefits">
+<div class="container">
+  <div class="section-head"><div class="kicker">The transformation</div><h2>What changes when you have the right system?</h2></div>
+  <div class="benefit-grid">
+    <article class="benefit"><div class="icon">◎</div><h3>[BENEFIT #1]</h3><p>[Outcome-focused explanation of the result.]</p></article>
+    <article class="benefit"><div class="icon">↗</div><h3>[BENEFIT #2]</h3><p>[Outcome-focused explanation of the result.]</p></article>
+    <article class="benefit"><div class="icon">✦</div><h3>[BENEFIT #3]</h3><p>[Outcome-focused explanation of the result.]</p></article>
+    <article class="benefit"><div class="icon">✓</div><h3>[BENEFIT #4]</h3><p>[Outcome-focused explanation of the result.]</p></article>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container author">
+  <div class="author-photo">[A]</div>
+  <div class="author-copy">
+    <div class="kicker">About the author</div>
+    <h2>Built from real experience, not empty theory.</h2>
+    <p><b>[AUTHOR NAME]</b> — [1-LINE CREDIBILITY].</p>
+    <p>[Short author story: why you created this guide, what experience led to it, and why readers can trust the framework.]</p>
+  </div>
+</div>
+</section>
+
+<section class="proof">
+<div class="container">
+  <div class="section-head"><div class="kicker">Social proof</div><h2>What readers are saying.</h2><p>Replace these placeholders with verified customer feedback as soon as you have it.</p></div>
+  <div class="testimonials">
+    <div class="quote"><p>“[TESTIMONIAL #1 — describe a specific result or experience.]”</p><small>— [CUSTOMER NAME / INITIALS]</small></div>
+    <div class="quote"><p>“[TESTIMONIAL #2 — describe what became easier or clearer.]”</p><small>— [CUSTOMER NAME / INITIALS]</small></div>
+    <div class="quote"><p>“[TESTIMONIAL #3 — describe the transformation.]”</p><small>— [CUSTOMER NAME / INITIALS]</small></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="section-head"><div class="kicker">Bonus stack</div><h2>Extra tools to help you take action faster.</h2></div>
+  <div class="bonus-grid">
+    <div class="bonus"><h3>🎁 Bonus #1 — [BONUS NAME]</h3><p>[What it helps the buyer do.]</p></div>
+    <div class="bonus"><h3>🎁 Bonus #2 — [BONUS NAME]</h3><p>[What it helps the buyer do.]</p></div>
+    <div class="bonus"><h3>🎁 Bonus #3 — [BONUS NAME]</h3><p>[What it helps the buyer do.]</p></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="price-box">
+    <div>
+      <div class="kicker" style="color:#d58a5c">Get the complete guide</div>
+      <h2>[EBOOK TITLE]</h2>
+      <p style="margin-top:14px">A focused resource for [WHO IS THIS FOR] ready to [CORE PROMISE].</p>
+      <div class="value-list">
+        <div><span>eBook — [FORMAT/LENGTH]</span><b>₹[VALUE]</b></div>
+        <div><span>[Bonus #1]</span><b>₹[VALUE]</b></div>
+        <div><span>[Bonus #2]</span><b>₹[VALUE]</b></div>
+        <div><span>Total value</span><b>₹[TOTAL VALUE]</b></div>
+      </div>
+    </div>
+    <div class="price-panel">
+      <div style="font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:#777">Today</div>
+      <div class="price">₹[PRICE] <small>one-time</small></div>
+      <p style="font-size:.85rem;color:#777;margin-top:7px">Instant digital access</p>
+      <a class="cta" href="[PASTE YOUR PAYMENT GATEWAY LINK/BUTTON CODE HERE]">Get This eBook →</a>
+      <div class="trust">Secure checkout • Instant download</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="guarantee">
+<div class="container">
+  <div class="guarantee-box">
+    <div class="guarantee-mark">◉</div>
+    <div class="kicker">Your peace of mind</div>
+    <h2>[7-Day Money-Back Guarantee]</h2>
+    <p style="color:#666;margin-top:15px">[Write your exact guarantee terms here. If you don't offer a guarantee, replace this section with a transparent purchase-policy statement.]</p>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="section-head"><div class="kicker">FAQ</div><h2>Questions before you start?</h2></div>
+  <div class="faq">
+    <details><summary>Who is this eBook for?</summary><p>It's designed for [WHO IS THIS FOR].</p></details>
+    <details><summary>What format will I receive?</summary><p>You'll receive [FORMAT/LENGTH], designed to be easy to read on your phone, tablet or computer.</p></details>
+    <details><summary>How do I get access?</summary><p>After successful payment, you'll receive the digital access/download instructions shown on your checkout page.</p></details>
+    <details><summary>Is this suitable for beginners?</summary><p>[Answer honestly based on your actual eBook. Example: Yes — the guide starts with the fundamentals and progresses step by step.]</p></details>
+    <details><summary>How quickly can I use what I learn?</summary><p>The guide is designed around actionable steps, so you can begin applying the relevant framework as soon as you finish each section.</p></details>
+    <details><summary>Do you offer refunds?</summary><p>[State your actual refund/guarantee policy here.]</p></details>
+  </div>
+</div>
+</section>
+
+<section class="final">
+<div class="container">
+  <div class="kicker" style="color:#e6a476">Your next step</div>
+  <h2>Stop piecing it together. Start with a clear plan.</h2>
+  <p>Get [EBOOK TITLE] today and start working toward [CORE PROMISE/TRANSFORMATION] with a practical roadmap built for [WHO IS THIS FOR].</p>
+  <a class="cta" href="[PASTE YOUR PAYMENT GATEWAY LINK/BUTTON CODE HERE]">Get This eBook →</a>
+  <div class="trust" style="color:#c7c0b8">Secure checkout • Instant download</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  © 2026 [AUTHOR / BRAND NAME] • [PRIVACY POLICY] • [TERMS]
+</footer>
+</body>
+</html>
